@@ -1,74 +1,36 @@
-import React from "react"
-import {
-  View,
-  Image,
-  ImageBackground,
-  TouchableOpacity,
-  Text,
-  Button,
-  Switch,
-  TextInput,
-  StyleSheet,
-  ScrollView
-} from "react-native"
-import Icon from "react-native-vector-icons/FontAwesome"
-import { CheckBox } from "react-native-elements"
-import { connect } from "react-redux"
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from "react-native-responsive-screen"
-import { getNavigationScreen } from "@screens"
+import React from "react";
+import { View, ImageBackground, TouchableOpacity, Text, StyleSheet, ScrollView } from "react-native";
+import { connect } from "react-redux";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { getNavigationScreen } from "@screens";
 export class Blank extends React.Component {
   constructor(props) {
-    super(props)
-
-    this.state = {}
+    super(props);
+    this.state = {};
   }
-  render = () => (
-    <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
-      style={styles.ScrollView_1}
-    >
+
+  render = () => <ScrollView contentContainerStyle={{
+    flexGrow: 1
+  }} style={styles.ScrollView_1}>
       <View style={styles.View_2} />
       <View style={styles.View_197_260}>
-        <ImageBackground
-          source={{
-            uri:
-              "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6bfa0810-7f79-4adb-85ec-995b72bbedba"
-          }}
-          style={styles.ImageBackground_I197_260_144_381}
-        />
+        <ImageBackground source={{
+        uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6bfa0810-7f79-4adb-85ec-995b72bbedba"
+      }} style={styles.ImageBackground_I197_260_144_381} />
         <View style={styles.View_I197_260_144_386}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/913fb812-0425-4561-a4d3-9c705e2d4826"
-            }}
-            style={styles.ImageBackground_I197_260_144_387}
-          />
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ef74b918-bbfa-4012-9771-ed21febb38d4"
-            }}
-            style={styles.ImageBackground_I197_260_144_391}
-          />
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bf5407af-a4f9-4201-80c8-00c149bb03fb"
-            }}
-            style={styles.ImageBackground_I197_260_144_395}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/913fb812-0425-4561-a4d3-9c705e2d4826"
+        }} style={styles.ImageBackground_I197_260_144_387} />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ef74b918-bbfa-4012-9771-ed21febb38d4"
+        }} style={styles.ImageBackground_I197_260_144_391} />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bf5407af-a4f9-4201-80c8-00c149bb03fb"
+        }} style={styles.ImageBackground_I197_260_144_395} />
         </View>
-        <ImageBackground
-          source={{
-            uri:
-              "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8a0fd0fa-70d8-4987-a416-8fc6c687fbf6"
-          }}
-          style={styles.ImageBackground_I197_260_144_400}
-        />
+        <ImageBackground source={{
+        uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8a0fd0fa-70d8-4987-a416-8fc6c687fbf6"
+      }} style={styles.ImageBackground_I197_260_144_400} />
       </View>
       <View style={styles.View_197_261}>
         <View style={styles.View_I197_261_144_2323}>
@@ -81,12 +43,7 @@ export class Blank extends React.Component {
       <View style={styles.View_197_262}>
         <Text style={styles.Text_197_262}>Compose your message here...</Text>
       </View>
-      <TouchableOpacity
-        style={styles.TouchableOpacity_197_263}
-        onPress={() =>
-          this.props.navigation.navigate(getNavigationScreen("197_111"))
-        }
-      >
+      <TouchableOpacity style={styles.TouchableOpacity_197_263} onPress={() => this.props.navigation.navigate(getNavigationScreen("197_111"))}>
         <View style={styles.View_I197_263_144_2127}>
           <Text style={styles.Text_I197_263_144_2127}>Send</Text>
         </View>
@@ -100,127 +57,71 @@ export class Blank extends React.Component {
         </View>
         <View style={styles.View_I197_264_144_930}>
           <View style={styles.View_I197_264_144_931}>
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/662538b5-3105-4cf8-a315-13806642ee36"
-              }}
-              style={styles.ImageBackground_I197_264_144_932}
-            />
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/271bf27b-3bc7-4434-be72-9d33fb3c3d01"
-              }}
-              style={styles.ImageBackground_I197_264_144_938}
-            />
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c5332542-25b7-4922-8560-bc911fc87028"
-              }}
-              style={styles.ImageBackground_I197_264_144_939}
-            />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/662538b5-3105-4cf8-a315-13806642ee36"
+          }} style={styles.ImageBackground_I197_264_144_932} />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/271bf27b-3bc7-4434-be72-9d33fb3c3d01"
+          }} style={styles.ImageBackground_I197_264_144_938} />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c5332542-25b7-4922-8560-bc911fc87028"
+          }} style={styles.ImageBackground_I197_264_144_939} />
           </View>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/572f8ca6-c2ca-4978-ab18-e0f3a23abc13"
-            }}
-            style={styles.ImageBackground_I197_264_144_940}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/572f8ca6-c2ca-4978-ab18-e0f3a23abc13"
+        }} style={styles.ImageBackground_I197_264_144_940} />
           <View style={styles.View_I197_264_144_947}>
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8f3c0718-ec43-4a44-a759-3720243289b0"
-              }}
-              style={styles.ImageBackground_I197_264_144_948}
-            />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8f3c0718-ec43-4a44-a759-3720243289b0"
+          }} style={styles.ImageBackground_I197_264_144_948} />
             <View style={styles.View_I197_264_144_949}>
               <Text style={styles.Text_I197_264_144_949}>Go</Text>
             </View>
           </View>
           <View style={styles.View_I197_264_144_950}>
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c99b5e59-6da5-4e31-b46c-7615d0b8de87"
-              }}
-              style={styles.ImageBackground_I197_264_144_951}
-            />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c99b5e59-6da5-4e31-b46c-7615d0b8de87"
+          }} style={styles.ImageBackground_I197_264_144_951} />
             <View style={styles.View_I197_264_144_952}>
               <Text style={styles.Text_I197_264_144_952}>space</Text>
             </View>
           </View>
           <View style={styles.View_I197_264_144_953}>
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8edd10a2-ae7d-4409-8953-44372e2d1b82"
-              }}
-              style={styles.ImageBackground_I197_264_144_954}
-            />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8edd10a2-ae7d-4409-8953-44372e2d1b82"
+          }} style={styles.ImageBackground_I197_264_144_954} />
             <View style={styles.View_I197_264_144_955}>
               <Text style={styles.Text_I197_264_144_955}>123</Text>
             </View>
           </View>
           <View style={styles.View_I197_264_144_956}>
             <View style={styles.View_I197_264_144_957}>
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c1ddfd95-b8dc-4828-92ae-d9d2b53e2d76"
-                }}
-                style={styles.ImageBackground_I197_264_144_958}
-              />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c1ddfd95-b8dc-4828-92ae-d9d2b53e2d76"
+            }} style={styles.ImageBackground_I197_264_144_958} />
               <View style={styles.View_I197_264_144_959}>
                 <Text style={styles.Text_I197_264_144_959}> </Text>
               </View>
             </View>
             <View style={styles.View_I197_264_144_960}>
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/fcc5acc0-93be-4242-bf44-c2db1b7a4b22"
-                }}
-                style={styles.ImageBackground_I197_264_144_961}
-              />
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c33a664b-fab3-4dc3-8cd2-e58fc918bf33"
-                }}
-                style={styles.ImageBackground_I197_264_144_964}
-              />
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/625352d4-17a6-4b36-ab00-1622b4fc1bfd"
-                }}
-                style={styles.ImageBackground_I197_264_144_965}
-              />
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5d449357-f6d8-44cd-9963-6930d1049a3c"
-                }}
-                style={styles.ImageBackground_I197_264_144_966}
-              />
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/249180a6-ba0f-4acb-bf15-2f0c5cfb37fc"
-                }}
-                style={styles.ImageBackground_I197_264_144_967}
-              />
-              <ImageBackground
-                source={{
-                  uri:
-                    "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/aa0d8453-84f4-4e25-b178-3ff5f419a24a"
-                }}
-                style={styles.ImageBackground_I197_264_144_968}
-              />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/fcc5acc0-93be-4242-bf44-c2db1b7a4b22"
+            }} style={styles.ImageBackground_I197_264_144_961} />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/c33a664b-fab3-4dc3-8cd2-e58fc918bf33"
+            }} style={styles.ImageBackground_I197_264_144_964} />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/625352d4-17a6-4b36-ab00-1622b4fc1bfd"
+            }} style={styles.ImageBackground_I197_264_144_965} />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/5d449357-f6d8-44cd-9963-6930d1049a3c"
+            }} style={styles.ImageBackground_I197_264_144_966} />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/249180a6-ba0f-4acb-bf15-2f0c5cfb37fc"
+            }} style={styles.ImageBackground_I197_264_144_967} />
+              <ImageBackground source={{
+              uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/aa0d8453-84f4-4e25-b178-3ff5f419a24a"
+            }} style={styles.ImageBackground_I197_264_144_968} />
             </View>
           </View>
           <View style={styles.View_I197_264_144_969}>
@@ -230,13 +131,9 @@ export class Blank extends React.Component {
                 <Text style={styles.Text_I197_264_144_972}> </Text>
               </View>
             </View>
-            <ImageBackground
-              source={{
-                uri:
-                  "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bb9935ec-9375-4f46-86a4-20d2d8153e64"
-              }}
-              style={styles.ImageBackground_I197_264_144_973}
-            />
+            <ImageBackground source={{
+            uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bb9935ec-9375-4f46-86a4-20d2d8153e64"
+          }} style={styles.ImageBackground_I197_264_144_973} />
           </View>
           <View style={styles.View_I197_264_144_974}>
             <View style={styles.View_I197_264_144_975} />
@@ -396,13 +293,15 @@ export class Blank extends React.Component {
           </View>
         </View>
       </View>
-    </ScrollView>
-  )
+    </ScrollView>;
 }
-
 const styles = StyleSheet.create({
-  ScrollView_1: { backgroundColor: "rgba(255, 255, 255, 1)" },
-  View_2: { height: hp("111%") },
+  ScrollView_1: {
+    backgroundColor: "rgba(255, 255, 255, 1)"
+  },
+  View_2: {
+    height: hp("111%")
+  },
   View_197_260: {
     flexGrow: 1,
     width: wp("100%"),
@@ -2043,12 +1942,14 @@ const styles = StyleSheet.create({
     letterSpacing: -0.5547059178352356,
     textTransform: "none"
   }
-})
+});
 
 const mapStateToProps = state => {
-  return {}
-}
+  return {};
+};
+
 const mapDispatchToProps = () => {
-  return {}
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Blank)
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blank);
